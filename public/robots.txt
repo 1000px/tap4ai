@@ -1,0 +1,4 @@
+Sitemap: https://www.tap5ai.com/sitemap.xml
+
+User-agent: *
+Allow: /
