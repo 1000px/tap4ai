@@ -6,7 +6,7 @@ import Content from './Content';
 
 export const revalidate = RevalidateOneHour * 6;
 
-export default async function Page() {
+export default function Page() {
   const t = useTranslations('Category');
 
   return (

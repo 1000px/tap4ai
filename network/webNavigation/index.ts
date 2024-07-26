@@ -43,3 +43,12 @@ export async function getWebNavigationDetail(name: string) {
 
   return res;
 }
+export async function getWebNavigationDetailList(name: string) {
+  const res = {
+    code: 200,
+    msg: 'success',
+    data: detailList.filter((item) => item.name === name) as WebNavigationDetailData[],
+  } satisfies ResponseData<WebNavigationDetailData[]>;
+
+  return res;
+}

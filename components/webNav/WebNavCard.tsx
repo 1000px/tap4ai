@@ -10,13 +10,13 @@ export default function WebNavCard({ item }: WebNavigationListRow) {
     .split(';')
     .find((el) => el.indexOf('NEXT_LOCALE') > -1)
     ?.split('=')[1];
-  let { name, thumbnailUrl, title, url, content } = item;
+  let { name, thumbnailUrl, title, url, content,categoryName } = item;
   if (locale != 'en') {
     content = item[`content_${locale}`];
   }
   return (
     <div className='flex flex-col gap-3 rounded-[12px] bg-[#2C2D36] p-2 lg:p-5'>
-      <Link href={`/ai/${name}`} title={title}>
+      <Link href={`/ai/${name}/${categoryName}`} title={title}>
         <BaseImage
           width={278}
           height={156}
