@@ -8,8 +8,8 @@ export const revalidate = RevalidateOneHour * 6;
 
 export default async function Page() {
   const t = useTranslations('Category');
+
   return (
-    // <></>
     <Content
       headerTitle={t('discover_ai')}
     // currentPage={1}

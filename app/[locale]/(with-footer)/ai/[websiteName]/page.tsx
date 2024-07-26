@@ -32,6 +32,7 @@ export default async function Page({ params: { websiteName } }: { params: { webs
   const { data } = res;
 
   if (!data) return null;
+
   return (
     <div className='w-full'>
       <div className='flex flex-col px-6 py-5 lg:h-[323px] lg:flex-row lg:justify-between lg:px-0 lg:py-10'>

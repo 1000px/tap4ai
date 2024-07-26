@@ -16,7 +16,7 @@ export default function Content({
 }: {
   headerTitle: string;
 }) {
-  // return <></>
+
   const t = useTranslations('Category');
   const containerRef: any = useRef(null);
   const [navigationList, setNavigationList] = useState<any[]>([]);
